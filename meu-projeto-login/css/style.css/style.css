@@ -1,0 +1,99 @@
+/* Remove margens e define fonte padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo cinza claro */
+body {
+    background-color: #f2f2f2;
+}
+
+/* Layout flexível entre login e imagem */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Caixa branca de login */
+.login-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Título */
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Rótulos dos campos */
+.login-box label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Campo de entrada */
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Botão de login */
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #5c6bc0;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Efeito hover no botão */
+.login-box button:hover {
+    background-color: #3f51b5;
+}
+
+/* Caixa da imagem */
+.img-box {
+    margin-left: 40px;
+}
+
+/* Imagem responsiva */
+.img-box img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* Estilo da mensagem de erro */
+.erro {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .img-box {
+        margin: 20px 0 0;
+    }
+}
